@@ -1,0 +1,23 @@
+@mixin transition($properties...) {
+    -webkit-transition: $properties;
+    -moz-transition: $properties;
+    -ms-transition: $properties;
+    transition: $properties;
+    //fix flickring issue https://goo.gl/7yCcm7
+    //CoreAnimation issue on safari https://stackoverflow.com/a/24469750/1578100
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+@mixin border-radius($properties...) {
+    border-radius: $properties;
+    -webkit-border-radius: $properties;
+    -moz-border-radius: $properties; 
+}
+@mixin animation($properties...) {
+    -webkit-animation: $properties;
+    -moz-animation: $properties;
+    -ms-animation: $properties;
+    -o-animation: $properties;
+    animation: $properties;
+}

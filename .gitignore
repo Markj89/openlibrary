@@ -1,7 +1,10 @@
-.DS_Store
 node_modules
 /dist
-
+/public
+/api/node_modules
+/api/package-lock.json
+package-lock.json
+yarn.lock
 
 # local env files
 .env.local
@@ -13,7 +16,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor directories and files
+# misc
+.DS_Store
 .idea
 .vscode
 *.suo
